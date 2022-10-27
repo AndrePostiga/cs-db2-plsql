@@ -8,6 +8,7 @@ up:
 
 down:
 	docker-compose down
+	rm -rf ./oracle-volume/XE
 
 .PHONY: logs
 

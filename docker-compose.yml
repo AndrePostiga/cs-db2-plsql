@@ -12,7 +12,6 @@ services:
       ORACLE_DATABASE: chinook
 
     volumes:
-      - ./oracle-volume/:/opt/oracle/oradata
       - ./scripts-iniciais/Chinook_Oracle.sql/:/container-entrypoint-initdb.d/Chinook_Oracle.sql
 
     ports:
