@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+
+  oracle:
+    image: gvenzl/oracle-xe:latest
+    container_name: oracle-chinook
+    environment:
+      APP_USER: dbuser
+      APP_USER_PASSWORD: dbuser
+      ORACLE_PASSWORD: root
+      ORACLE_DATABASE: chinook
+
+    volumes:
+      - ./oracle-volume/:/opt/oracle/oradata
+      - ./scripts-iniciais/Chinook_Oracle.sql/:/container-entrypoint-initdb.d/Chinook_Oracle.sql
+
+    ports:
+      - 1521:1521
