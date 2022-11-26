@@ -1,0 +1,29 @@
+Regras semânticas customizadas para a base Chinook
+
+Resumo:
+- Preço mínimo por quantidade de bytes
+- Álbum com menos de 20 músicas
+
+Descrição
+1* Regra 
+Levando em consideração o custo de armazenamento nos sistemas de informação, implementaremos uma regra que ditará um preço mínimo
+para uma faixa (TRACK) dependendo da quantidade de bytes que a faixa possuir, quanto maior a quantidade de bytes, maior será o
+preço mínimo.
+
+Obs: A coluna Bytes deve ser dividia por (1024*1024) para se obter o valor em MBytes
+
++--------------+------------------------+
+| Faixa        | Valor mínimo permitido |
+|--------------|------------------------|
+| Até 1Mb      | Sem preço mínimo       |
+| 1Mb até 2Mb  | .99                    |
+| 2Mb até 3Mb  | 1.99                   |
+| 4Mb até 5Mb  | 2.99                   |
+| 5Mb ou mais  | 3.99                   |
++--------------+------------------------+
+
+2* Regra 
+A atenção do público está cada vez mais restrita, pensando nisso, a segunda regra semântica será a do limite
+de músicas que um albúm pode possuir. 
+
+Iremos restringir em 20 faixas por álbum, para cada album novo cadastrado.
