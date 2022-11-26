@@ -18,8 +18,9 @@ Obs: A coluna Bytes deve ser dividia por (1024*1024) para se obter o valor em MB
 | Até 1Mb      | Sem preço mínimo       |
 | 1Mb até 2Mb  | .99                    |
 | 2Mb até 3Mb  | 1.99                   |
-| 4Mb até 5Mb  | 2.99                   |
-| 5Mb ou mais  | 3.99                   |
+| 3Mb até 4Mb  | 2.99                   |
+| 4Mb até 5Mb  | 3.99                   |
+| 5Mb ou mais  | 4.99                   |
 +--------------+------------------------+
 
 2* Regra 
