@@ -1,7 +1,6 @@
 .PHONY: up
 
 up:
-	docker-compose build
 	docker-compose -f docker-compose.yml up -d
 
 .PHONY: down
